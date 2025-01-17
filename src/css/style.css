@@ -1,6 +1,192 @@
 body {
     font-family: "DM Sans", serif;
+    background-color: var(--white);
+    color: var(--black);
 }
-p {
-    font-size: 18px;
+
+img {
+    width: 50%;
+}
+
+main {
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 70%;
+    display: grid;
+    grid-template-areas:
+        "sched-content fast-social fast-social sched-media"
+        "sched-content fast-social fast-social sched-media"
+        "ai-content accounts consistency sched-media"
+        "ai-content accounts growth growth";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.card.sched-content {
+    height: 125%;
+    grid-area: sched-content;
+    background-color: var(--lighter-yellow);
+    padding-inline: 1.5rem;
+    padding-top: 30%;
+
+    h3 {
+        max-width: 240px;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 0.9;
+
+        span {
+            color: var(--darker-purple);
+            font-style: italic;
+        }
+    }
+
+    img {
+        padding-top: 10%;
+        width: 100%;
+    }
+}
+
+.card.ai-content {
+    grid-area: ai-content;
+    background-color: var(--darker-yellow);
+    height: 83%;
+    margin-top: 36%;
+    padding: 20px 1rem 0 20px;
+
+    h3 {
+        max-width: 240px;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.1;
+    }
+
+    img {
+        padding-top: 30%;
+        width: 100%;
+    }
+}
+
+.card.fast-social {
+    grid-area: fast-social;
+    background-color: var(--darker-purple);
+    color: var(--white);
+    padding: 4rem 2rem;
+    text-align: center;
+
+    h3 {
+        font-size: 3.5rem;
+        font-weight: 500;
+        line-height: 0.9;
+    }
+
+    img {
+        padding-top: 6%;
+        width: 40%;
+    }
+
+    span:first-child {
+        color: var(--darker-yellow);
+    }
+
+    span:last-child {
+        font-style: italic;
+    }
+}
+
+.card.accounts {
+    grid-area: accounts;
+    background-color: var(--white);
+    padding: 20px;
+    overflow-x: hidden;
+
+    img:first-child {
+        width: 150%;
+        padding-bottom: 5%;
+    }
+
+    h3 {
+        font-size: 1.9rem;
+        font-weight: 500;
+        line-height: 0.9;
+        padding-bottom: 30%;
+    }
+
+    span {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 17px;
+        padding-bottom: 15%;
+    }
+
+    img:last-child {
+        width: 90%;
+    }
+}
+
+.card.consistency {
+    grid-area: consistency;
+    background-color: var(--darker-yellow);
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    max-height: 215px;
+    overflow-y: hidden;
+
+    h3 {
+        font-size: 1.9rem;
+        font-weight: 500;
+        line-height: 0.9;
+        padding-bottom: 5%;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.card.growth {
+    grid-area: growth;
+    background-color: var(--darker-purple);
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+
+    h3 {
+        color: var(--white);
+        font-size: 1.98rem;
+        line-height: 1;
+        padding-left: 10px;
+    }
+}
+
+.card.sched-media {
+    grid-area: sched-media;
+    background-color: var(--lighter-purple);
+    padding: 30px;
+    overflow-x: hidden;
+
+    h3 {
+        font-size: 1.7rem;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    img {
+        width: 200%;
+        padding-block: 8%;
+    }
+
+    p {
+        font-weight: 500;
+    }
 }
