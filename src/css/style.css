@@ -109,7 +109,7 @@ main {
     padding: 20px 20px 0 20px;
     overflow-x: hidden;
 
-    img:first-child {
+    img {
         width: 150%;
         padding-bottom: 5%;
     }
@@ -134,7 +134,7 @@ main {
         padding-bottom: 15%;
     }
 
-    img:last-child {
+    img {
         width: 90%;
     }
 }
