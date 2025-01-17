@@ -22,7 +22,7 @@ main {
         "sched-content fast-social fast-social sched-media"
         "sched-content fast-social fast-social sched-media"
         "ai-content accounts consistency sched-media"
-        "ai-content accounts growth growth";
+        "ai-content audience growth growth";
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
 }
@@ -106,7 +106,7 @@ main {
 .card.accounts {
     grid-area: accounts;
     background-color: var(--white);
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     overflow-x: hidden;
 
     img:first-child {
@@ -115,12 +115,16 @@ main {
     }
 
     h3 {
-        font-size: 1.9rem;
+        font-size: 1.7rem;
         font-weight: 500;
         line-height: 0.9;
-        padding-bottom: 30%;
     }
+}
 
+.card.audience {
+    grid-area: audience;
+    background-color: var(--white);
+    padding: 0 20px;
     span {
         font-size: 4rem;
     }
